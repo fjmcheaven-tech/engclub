@@ -1,0 +1,1 @@
+export default function Teacher(){return <main className="portal"><section className="content"><div className="badge">TEACHER PORTAL</div><h1>My Teaching Calendar</h1><p>Your real assigned classes appear automatically here through the EngClub database.</p><a className="primary" href="/dashboard">Open my dashboard →</a></section></main>}

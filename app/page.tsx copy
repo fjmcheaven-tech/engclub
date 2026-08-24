@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function Home(){return <main className="landing"><div className="badge">ENGCLUB • ESL TEACHING PORTAL</div><h1>Teach. Learn.<br/><em>Connect.</em></h1><p>A real portal for ESL teachers, students, scheduling, bookings, and classes.</p><Link className="primary" href="/login">Enter EngClub →</Link><div className="features"><div>👑<b>Admin</b><span>Manage people and bookings</span></div><div>👩‍🏫<b>Teachers</b><span>Calendar and assigned classes</span></div><div>🎓<b>Students</b><span>Book and join lessons</span></div></div></main>
