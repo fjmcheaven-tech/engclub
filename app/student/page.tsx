@@ -1,1 +1,0 @@
-export default function Student(){return <main className="portal"><section className="content"><div className="badge">STUDENT PORTAL</div><h1>Book a Class</h1><p>Your administrator can assign classes, and this portal is ready for self-booking in the next step.</p><a className="primary" href="/dashboard">View my schedule →</a></section></main>}
