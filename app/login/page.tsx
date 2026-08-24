@@ -1,0 +1,5 @@
+"use client";
+import {useState} from "react"; import {createClient} from "../../lib/supabase";
+export default function Login(){const [email,setEmail]=useState("");const [password,setPassword]=useState("");const [msg,setMsg]=useState("");
+async function login(e:React.FormEvent){e.preventDefault();const supabase=createClient();const {error}=await supabase.auth.signInWithPassword({email,password});if(error)setMsg(error.message);else window.location.href="/dashboard";}
+return <main className="auth"><section><div className="badge">WELCOME TO ENGCLUB</div><h1>Sign in</h1><p>Use your teacher, student, or administrator account.</p><form onSubmit={login}><input type="email" placeholder="Email address" value={email} onChange={e=>setEmail(e.target.value)} required/><input type="password" placeholder="Password" value={password} onChange={e=>setPassword(e.target.value)} required/><button className="primary">Sign in →</button></form><p className="message">{msg}</p></section></main>}
